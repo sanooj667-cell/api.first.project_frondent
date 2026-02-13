@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -14,15 +15,13 @@ const Header = () => {
         <nav>
           <ul className="flex gap-8 font-medium">
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                Home
-              </a>
+                <Link to={"/"}>Home</Link>
             </li>
+
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                About
-              </a>
+                <Link to={"/about"}>About</Link>
             </li>
+            
             <li>
               <a href="#" className="hover:text-green-400 transition">
                 Services
